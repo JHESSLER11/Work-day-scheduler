@@ -8,11 +8,30 @@ var displayTime = function() {
 }
 displayTime()
 
-var hourTracker = function() {
-    $('time.block').each(function(){
-        var eachHour = parseInt($('time.block').attr('id').split('hour')[1])
+//displays background colors based on current time
+function hourTracker() {
+    //call to current hour
+    var now = moment().hours();
+    //for loop to go through each hour attribute
+    $(".time-block").each(function(){
+        var eachHour = parseInt($(this).attr('id'));
+
+        if (eachHour > now) {
+            $(this).addClass("future");
+
+        } else if (eachHour === now) {
+            $(this).addClass("present");
+
+        } else { 
+            $(this).addClass("past");
+        }
         
     })
-}
+};
+
+$('saveBtn').click();
+
+
+hourTracker();
     
 //loop to check for hours 
