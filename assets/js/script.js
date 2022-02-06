@@ -29,8 +29,13 @@ function hourTracker() {
     })
 };
 
-$('saveBtn').click();
+$('saveBtn').on("click", function(){
+    var value = $(this).siblings(".description").val();
+    var time = $(this).parent().attr('id');
+    localStorage.setItem(value, time);
+});
 
+$('#9 .description').val(localStorage.getItem("9"));
 
 hourTracker();
     
