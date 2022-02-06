@@ -29,7 +29,7 @@ function hourTracker() {
     })
 };
 
-$('saveBtn').on("click", function(){
+$('.saveBtn').on("click", function(){
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr('id');
     localStorage.setItem(value, time);
