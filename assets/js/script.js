@@ -35,7 +35,7 @@ $('.saveBtn').on("click", function(){
     localStorage.setItem(time, value);
 });
 
-//adds the local storage back to the textbox on refresh. 
+//adds the local storage back to the text box on refresh. 
 $('#9am .description').val(localStorage.getItem("9am"));
 $('#10am .description').val(localStorage.getItem("10am"));
 $('#11am .description').val(localStorage.getItem("11am"));
