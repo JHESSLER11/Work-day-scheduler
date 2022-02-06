@@ -1,7 +1,7 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler
 
 ## About 
-A password generator that can include numbers, upper and lowers case letters, and special characters. The password can only be between 8 and 128 charcters and must include one of the charcter types to run. Check back for more functionality updates in the future!
+The application can be used to schedule task throughout a 8-5 workday. Hours colored in green are in the future and hours coloed in red are current, while grey hours are in the past. The user can update the task in each our with text. The text will be stored in local storage and will remain if the page is refreshed. 
 
 ## Screen Shot of deployed application
 ![Alt text](https://github.com/JHESSLER11/Work-day-scheduler/blob/main/assets/images/screenshot_front.png)
