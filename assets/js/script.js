@@ -28,15 +28,25 @@ function hourTracker() {
         
     })
 };
-
+//when you click the button the value and time is saved to local storage 
 $('.saveBtn').on("click", function(){
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr('id');
-    localStorage.setItem(value, time);
+    localStorage.setItem(time, value);
 });
 
-$('#9 .description').val(localStorage.getItem("9"));
+//adds the local storage back to the textbox on refresh. 
+$('#9am .description').val(localStorage.getItem("9am"));
+$('#10am .description').val(localStorage.getItem("10am"));
+$('#11am .description').val(localStorage.getItem("11am"));
+$('#12pm .description').val(localStorage.getItem("12pm"));
+$('#1pm .description').val(localStorage.getItem("1pm"));
+$('#2pm .description').val(localStorage.getItem("2pm"));
+$('#3pm .description').val(localStorage.getItem("3pm"));
+$('#4pm .description').val(localStorage.getItem("4pm"));
+$('#5pm .description').val(localStorage.getItem("5pm"));
+
+
 
 hourTracker();
     
-//loop to check for hours 
